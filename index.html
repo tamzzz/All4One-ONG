@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tamara Pop">
+        <meta name="description" content="All4one este o organizație non-guvernamentală de tineret din Cluj-Napoca ce promovează acțiuni în folosul societății.">
+        <meta name="keywords" content="All4One, ONG, voluntariat, tineret, donație, traineri, oportunitate">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title>All4One_ONG</title>
+        <style>
+            body { background-color: DarkKhaki; }
+
+            nav img { width: 60px; }
+
+            p, h1, h2, h3, h4 { color: whitesmoke; }
+
+            a { color: #556B2F; }
+
+            a:hover { color:black; }
+
+            header .btn { background-color: #556B2F; }
+
+            .btn { background-color: FloralWhite; }
+
+            #proiecte h4 { color: #556B2F; }
+
+            .responsive {
+             width: 80%;
+             height: auto;
+            }
+
+            .talk-bubble {
+             display: inline-block;
+             position: relative;            
+	         height: auto;
+	         background-color: FloralWhite;
+            }
+
+            .talk-bubble p { color: #556B2F; }
+
+            .round { border-radius: 30px; }
+
+            .tri-right.right-in:after {
+	         content: ' ';
+	         position: absolute;
+	         right: -20px;
+             top: 38px;
+	         border: 12px solid;
+	         border-color: FloralWhite transparent transparent FloralWhite;
+            }
+
+            .tri-right.left-in:after {
+	         content: ' ';
+	         position: absolute;
+	         left: -20px;
+             top: 38px;
+	         border: 12px solid;
+	         border-color: FloralWhite FloralWhite transparent transparent;
+            }
+
+            .img-thumbnail { width: 100px; }
+
+            #echipa .card { background-color: FloralWhite; }
+
+            .card-title, .card-text { color: #556B2F; }
+
+            .card-img-bottom { filter: grayscale(100%); }
+
+            #inscriere .card-footer { min-height: 127px; }
+
+            footer .float-start img { width: 40px; }
+
+            .carousel, #proiecte .btn, .talk-bubble, #echipa .card { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <img src="imagini/logo.png">
+                        <span>All4One</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bara-navigare">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="bara-navigare">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#acasa">Despre noi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#proiecte">Proiecte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#echipa">Echipă</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-dark btn-sm"><a class="nav-link text-light" href="#inscriere">Alătură-te acum!</a></button>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="carusel" class="carousel slide w-40 mx-auto" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carusel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carusel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carusel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carusel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carusel" data-bs-slide-to="4"></button>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 mx-auto rounded" src="imagini/hero1.jpg" alt="mâinile echipei una peste alta">                          
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 mx-auto rounded" src="imagini/hero2.jpg" alt="echipa care dezbate un subiect">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 mx-auto rounded" src="imagini/hero3.jpg" alt="oameni care lucrează la un proiect">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 mx-auto rounded" src="imagini/hero4.jpg" alt="voluntari care își fac o poză">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 mx-auto rounded" src="imagini/hero5.jpg" alt="echipă care formează o steluță din mâini">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="container-fluid p-5" id="acasa">
+                <h2 class="text-center text-light display-4">Despre noi</h2>
+                <div class="row pt-5">
+                    <div class="col-lg-6 align-self-center">
+                        <h4>Cine suntem?</h4>
+                        <p><i>All4one</i> este o organizație non-profit de tineret din Cluj-Napoca ce promovează acțiuni în folosul societății. Idealurile noastre se conturează cel mai bine în jurul proverbului:</p>
+                        <p class="display-6 pb-3"><sub><img src="imagini/quote1.png"></sub>Toți pentru unul, și unul pentru toți!<sup><img src="imagini/quote1.png"></sup></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="d-inline">Obiectivele noastre</h4>
+                        <img class="d-inline" src="imagini/sageti.png">
+                        <p>Voluntariatul îți oferă atât posibilitatea de a cunoaște oameni noi, cât și oportunități inedite. Scopul nostru este să încurajăm cât mai mulți tineri să contribuie la dezvoltarea comunității din care facem parte. Împreună, participăm la diverse activități sociale, precum sprijinirea persoanelor defavorizate sau ecologizarea mediului. Prin intermediul acestora, membrii clubului pot să dobândească abilități de muncă în echipă și calități esențiale de leadership.</p>
+                    </div>
+                </div>               
+        </section>
+
+        <section class="container-fluid text-center pt-1 p-5" id="proiecte">
+            <h2 class="text-light display-4">Proiectele noastre</h2>
+
+            <div class="row pt-3 pb-5">
+                <div>
+                    <button class="btn btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caini">
+                        <h4>Strângere de hrană pentru câini</h4>
+                    </button>
+                    <img class="mx-auto d-block" src="imagini/sageata-jos.png">
+                    <div id="caini" class="collapse">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <img class="responsive rounded-circle" src="imagini/doggo.jpg" alt="cățeluș drăguț cu ochelari de vedere">
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 align-self-center p-3">
+                                <p>Cu ocazia zilei internaționale a cățelușilor, ne dorim să îi facem să se simtă iubiți. Prin urmare, îi sărbătorim anual în data de <i>26 august</i>, donând mâncare câinilor din adăposturi.</p>
+                            </div>
+                        </div>
+                        <img src="imagini/sageata-sus.png">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cadouri">
+                        <h4>„Cutia cu zâmbete”</h4>
+                    </button>
+                    <img class="mx-auto d-block" src="imagini/sageata-jos.png">
+                    <div id="cadouri" class="collapse">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6 align-self-center p-3">
+                                <p>Prin intermediul acestui proiect, fiecare membru confecționează sau achiziționează câte un cadou care va fi dăruit unui copil. Așadar, în fiecare an în perioada Crăciunului aducem zâmbete pe fețele copiilor defavorizați.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <img class="responsive rounded-circle" src="imagini/heart.jpg" alt="mai multe mâini pictate cu roșu în formă de inimă">
+                            </div>
+                        </div>
+                        <img src="imagini/sageata-sus.png">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eco">
+                        <h4>Ecologizare în pădure</h4>
+                    </button>
+                    <img class="mx-auto d-block" src="imagini/sageata-jos.png">
+                    <div id="eco" class="collapse">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <img class="responsive rounded-circle" src="imagini/eco.jpg" alt="cinci oameni întinși pe iarbă care alcătuiesc o stea">
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 align-self-center p-3">
+                                <p>În fiecare lună ne adunăm cu scopul de a colecta o parte din deșeurile aruncate în natură, contribuind la un ecosistem mai sănătos.</p>
+                            </div>
+                        </div>
+                        <img src="imagini/sageata-sus.png">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#camin">
+                        <h4>Vizită la căminul pentru vârstnici</h4>
+                    </button>
+                    <img class="mx-auto d-block" src="imagini/sageata-jos.png">
+                    <div id="camin" class="collapse">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6 align-self-center p-3">
+                                <p>Vârstnicii de la căminul <i>„Nea Marin”</i> sunt bucuroși să îi primească drept oaspeți pe membrii noștri dornici să își petreacă puțin din timpul lor liber fie ascultându-le poveștile de viață, fie jucând o partidă de șah.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <img class="responsive rounded-circle" src="imagini/old.jpg" alt="doi vârstnici: o doamnă în picioare cu mâna pe un bărbat care șede">
+                            </div>
+                        </div>
+                        <img src="imagini/sageata-sus.png">
+                    </div>
+                </div>
+                <p class="my-2">Restul proiectelor realizate de noi le regăsești pe conturile noastre, în secțiunea <a class="text-decoration-none" href="#contact"><b>contact.</b></a></p>
+            </div>
+
+            <h3 class="text-light display-6">Ce spun voluntarii?</h3>
+            <div class="row pt-3">
+                <div class="col-sm-6 col-md-4 col-lg-4 pb-3">
+                    <div class="talk-bubble tri-right round right-in">
+                        <div class="p-3">
+                            <p><sub><img src="imagini/quote2.png"></sub> All4one este pentru mine a doua familie. În timpul celor patru ani de voluntariat, m-am dezvoltat alături de colegii mei și am trăit momente pe care, cu siguranță, nu le voi uita niciodată! <sup><img src="imagini/quote2.png"></sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2 pb-3">
+                    <img class="rounded-circle img-thumbnail float-start" src="imagini/vol.jpg" alt="fată cu părul blond care zâmbește cu dinți">
+
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2 pb-3">
+                    <img class="rounded-circle img-thumbnail float-end" src="imagini/vol2.jpg" alt="fată cu părul șaten care zâmbește">
+                    
+                </div>
+                <div class="left-in col-sm-6 col-md-6 col-lg-4 pb-3">
+                    <div class="talk-bubble tri-right round left-in">
+                        <div class="p-3">
+                            <p><sub><img src="imagini/quote2.png"></sub> Sunt mândră să fac parte din All4one, întrucât am cunoscut oameni faini și am legat prietenii pe viață. Am realizat cât de important este să dăruim din puținul nostru, fiindcă pentru alții poate însemna foarte mult. <sup><img src="imagini/quote2.png"></sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 pb-3">
+                    <div class="talk-bubble tri-right round right-in">
+                        <div class="p-3">
+                            <p><sub><img src="imagini/quote2.png"></sub> Deși nu e prima organizație de voluntariat din care fac parte, în cadrul acesteia am reușit să mă integrez în comunitate și să îmi îmbunătățesc skill-urile de comunicare și de lucru în echipă. <sup><img src="imagini/quote2.png"></sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2 pb-3">
+                    <img class="rounded-circle img-thumbnail float-start" src="imagini/vol3.jpg" alt="băiat care zâmbește și poartă ochelari de soare">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2 pb-3">
+                    <img class="rounded-circle img-thumbnail float-end" src="imagini/vol4.jpg" alt="fată roșcată cu părul scurt">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 pb-3">
+                    <div class="talk-bubble tri-right round left-in">
+                        <div class="p-3">
+                            <p><sub><img src="imagini/quote2.png"></sub> E incredibil ce energie bună pot transmite oamenii de aici. Ador să lucrăm împreună la proiecte și să ne distrăm la activitățile de tip team-building. Recomand acest club de voluntariat cu cea mai mare plăcere! <sup><img src="imagini/quote2.png"></sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid text-center p-5" id="echipa">
+            <h2 class="text-light display-4">Echipa noastră</h2>
+            <div class="row pt-2 pb-5">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card m-4 p-1">
+                        <div class="card-body">
+                            <h4 class="card-title">Șerban</h4>
+                            <p class="card-text">Președinte</p>
+                        </div>
+                        <img class="card-img-bottom rounded" src="imagini/president.jpg" alt="poză alb-negru cu un tânăr care râde">
+                        <p class="card-footer text-dark">Șerban@All4One.org</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card m-4 p-1">
+                        <div class="card-body">
+                            <h4 class="card-title">Ruxandra</h4>
+                            <p class="card-text">Vicepreședinte</p>
+                        </div>
+                        <img class="card-img-bottom rounded" src="imagini/vicepresident.jpg" alt="poză alb-negru cu o domnișoară care râde">
+                        <p class="card-footer text-dark">Ruxandra@All4One.org</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card m-4 p-1">
+                        <div class="card-body">
+                            <h4 class="card-title">Luciana</h4>
+                            <p class="card-text">Secretară</p>
+                        </div>
+                        <img class="card-img-bottom rounded" src="imagini/secretary.jpg" alt="poză alb-negru cu o tânără care râde">
+                        <p class="card-footer text-dark">Luciana@All4One.org</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card m-4 p-1">
+                        <div class="card-body">
+                            <h4 class="card-title">Alex</h4>
+                            <p class="card-text">Trezorier</p>
+                        </div>
+                        <img class="card-img-bottom rounded" src="imagini/moneyman.jpg" alt="poză alb-negru cu un tânăr tuns periuță care face cu ochiul și dă ok-ul">
+                        <p class="card-footer text-dark">Alex@All4One.org</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card m-4 p-1">
+                        <div class="card-body">
+                            <h4 class="card-title">Ligia</h4>
+                            <p class="card-text">Director de imagine</p>
+                        </div>
+                        <img class="card-img-bottom rounded" src="imagini/image.jpg" alt="poză alb-negru cu o domnișoară care poartă o pălărie pe cap">
+                        <p class="card-footer text-dark">Ligia@All4One.org</p>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card m-4 p-1">
+                        <div class="card-body">
+                            <h4 class="card-title">Clara</h4>
+                            <p class="card-text">Director de proiecte</p>
+                        </div>
+                        <img class="card-img-bottom rounded" src="imagini/project.jpg" alt="poză alb-negru cu o tânără care zâmbește">
+                        <p class="card-footer text-dark">Clara@All4One.org</p>
+                    </div>                  
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card m-4 p-1">
+                        <div class="card-body">
+                            <h4 class="card-title">Albert</h4>
+                            <p class="card-text">Director IT</p>
+                        </div>
+                        <img class="card-img-bottom rounded" src="imagini/IT.jpg" alt="poză alb-negru cu un tânăr indian cu barbă și ochelari de vedere">
+                        <p class="card-footer text-dark">Albert@All4One.org</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card m-4 p-1">
+                        <div class="card-body">
+                            <h4 class="card-title">Izabela</h4>
+                            <p class="card-text">Director HR</p>
+                        </div>
+                        <img class="card-img-bottom rounded" src="imagini/HR.jpg" alt="poză alb-negru cu o domnișoară care își prinde părul și zâmbește">
+                        <p class="card-footer text-dark">Izabela@All4One.org</p>
+                    </div>
+                </div>
+                <p class="my-3">Dacă dorești să te alături board-ului nostru, te rugăm să îți depui CV-ul <a class="text-decoration-none" href="https://www.youtube.com/watch?v=GdNqsKQ0fyQ"><b>aici.</b></a></p>
+            </div>
+
+            <div class="container-fluid" id="inscriere">
+                <h3 class="text-light display-6">Hai în echipă!</h3>
+                <div class="row pt-2 pb-3">
+                    <div class="crad col-lg-4 p-3">
+                        <div class="card-header">
+                            <h4>Vrei să faci o donație?</h4>
+                        </div>
+                        <div class="card-body">
+                            <img class="w-10" src="imagini/donatie.png">
+                        </div>
+                        <div class="card-footer">
+                            <p>Fiecare leu face diferența! Donează <a class="text-decoration-none" href="https://www.youtube.com/watch?v=qMxX-QOV9tI"><b>chiar acum</b></a> pentru cauza pe care o dorești.</p>
+                        </div>
+                    </div>
+                    <div class="crad col-lg-4 p-3">
+                        <div class="card-header">
+                            <h4>Vrei să devi voluntar?</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="imagini/voluntariat.png">
+                        </div>
+                        <div class="card-footer">
+                            <p>Dacă dorești să te implici în serviciul comunitar și să faci o schimbare în viața oamenilor, a animalelor și -mai ales- a ta, completează formularul <a class="text-decoration-none" href="https://forms.gle/boE3daJeoycoU2Mi6"><b>Înscriere voluntar.</b></a></p>
+                        </div>
+                    </div>
+                    <div class="crad col-lg-4 p-3">
+                        <div class="card-header">
+                            <h4>Vrei să devi trainer?</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="imagini/trainer.png">
+                        </div>
+                        <div class="card-footer">
+                            <p>Dacă ai experiență și consideri că poți să fii un lider, completează formularul <a class="text-decoration-none" href="https://forms.gle/Ua7c68GWP71ZXwiN6"><b>Înscriere trainer.</b></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid bg-light text-center" id="contact">
+            <h2 class="display-6 text-dark pt-2 pb-5">Contact</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <img src="imagini/mail.png">
+                    <p class="text-dark pt-3 pb-5">office@all4one.ro</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">    
+                    <img src="imagini/telefon.png">
+                    <p class="text-dark pt-3 pb-5">0264 391 175</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <a class="text-decoration-none" href="https://www.instagram.com/milo_the_wurst/">
+                        <img src="imagini/instagram.png">
+                        <p class="text-dark pt-3 pb-5">@All4One_volunteering</p>
+                    </a>
+                </div>    
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <a class="text-decoration-none" href="https://www.facebook.com/help/219967728031249">
+                        <img src="imagini/facebook.png">
+                        <p class="text-dark pt-3 pb-5">All4One ONG</p>
+                    </a>
+                </div>
+            </div>
+            <div class="pb-3">
+                <img src="imagini/locatie.png">
+                <span class="text-dark">Champ de Mars, 5 Av. Anatole France, 75007 Paris, Franța</span>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10499.966498430253!2d2.2944813!3d48.8583701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ddca9ee380ef7e0!2sTurnul%20Eiffel!5e0!3m2!1sro!2sro!4v1639235799787!5m2!1sro!2sro" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="float-start">
+                <img src="imagini/logo.png">
+                <span class="text-light align-self-center">All4One</span>
+            </div>
+            <p class="text-light float-end p-1">Copyright &copy; 2021 Organizația All4One</p>
+        </footer>
+    </body>
+
+</html>
